@@ -1,0 +1,12 @@
+<h2 data-bind="text: 'Agreement component'"></h2>
+
+<div class="field">
+    <label for="terms">Agree terms and conditions
+        <input type="checkbox" data-bind="checked: agreementStatus" id="terms"/>
+    </label>
+</div>
+
+<div class="terms-status">
+    <span data-bind="text: 'Terms Status: '"></span>
+    <strong data-bind="text: agreementStatus"></strong>
+</div>

@@ -1,0 +1,10 @@
+<!-- ko if: readyList.length -->
+<div class="ready-list">
+    <H2>Ready items list</H2>
+    <ul data-bind="foreach: readyList">
+        <li>
+            <span data-bind="text:todo"></span>
+        </li>
+    </ul>
+</div>
+<!-- /ko -->

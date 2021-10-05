@@ -1,0 +1,10 @@
+<div class="sku-lookup">
+    <h2>Sku Lookup</h2>
+    <form data-bind="submit:handleSubmit">
+        <input type="text" name="sku" data-bind="textInput: sku, attr:{ placeholder: placeholder}"/>
+        <button type="submit">Add Sku</button>
+    </form>
+
+    <div data-bind="text:sku"></div>
+    <div data-bind="html:messageResponse, style: { color: isSuccess ? 'green' : 'red'}"></div>
+</div>

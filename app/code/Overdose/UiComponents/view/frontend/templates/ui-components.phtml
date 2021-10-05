@@ -1,0 +1,25 @@
+<!--UI components-->
+
+<div data-bind="scope: 'component-a'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<div data-bind="scope: 'component-b'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app":{
+                "components": {
+                    "component-a": {
+                        "component": "Overdose_UiComponents/js/component-a"
+                    },
+                    "component-b": {
+                        "component": "Overdose_UiComponents/js/component-b"
+                    }
+                }
+            }
+        }
+    }
+</script>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Components</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="advanced.todo" template="Overdose_AdvancedTodo::advanced-todo.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="advanced-todo" xsi:type="array">
+                                <item name="component" xsi:type="string">Overdose_AdvancedTodo/js/advanced-todo</item>
+                                <item name="children" xsi:type="array">
+                                    <item name="ready-items-list" xsi:type="array">
+                                        <item name="component" xsi:type="string">Overdose_AdvancedTodo/js/ready-items-list</item>
+                                    </item>
+                                    <item name="search-items-result" xsi:type="array">
+                                        <item name="component" xsi:type="string">Overdose_AdvancedTodo/js/search-items-result</item>
+                                    </item>
+                                    <item name="todos-graphic" xsi:type="array">
+                                        <item name="component" xsi:type="string">Overdose_AdvancedTodo/js/graph</item>
+                                    </item>
+                                </item>
+                            </item>
+                            <item name="ui-form" xsi:type="array">
+                                <item name="component" xsi:type="string">Overdose_AdvancedTodo/js/ui-form</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

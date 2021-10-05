@@ -1,0 +1,51 @@
+<h2 data-bind="text: 'TODO component'"></h2>
+<input type="text" data-bind="textInput: todoInput" placeholder="Enter new todo item">
+
+<button data-bind="click: addTodo">Add ToDO</button>
+
+<!-- ko if: todoList.length -->
+    <div class="todo-list">
+        <H2>TODO-LIST</H2>
+
+        <a class="search-trigger" data-bind="click: toggleSearchInputState">
+            <span>Find ToDos</span>
+            <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+        </a>
+        <input type="text"
+               data-bind="event: {keyup: findTodo},
+                textInput: searchInput, visible: searchInputState"
+               placeholder="Find Todo">
+
+        <!-- ko with: getChild('search-items-result') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
+
+        <!-- ko ifnot: resultArray.length -->
+        <ul data-bind="foreach: todoList">
+            <li>
+                <span data-bind="text: todo"></span>
+                <button class="action ready" data-bind="click: $parent.addToReady.bind($parent)">Ready</button>
+            </li>
+        </ul>
+        <!-- /ko -->
+    </div>
+<!-- /ko -->
+
+<!-- ko with: getChild('ready-items-list') -->
+    <!-- ko template: getTemplate() --><!-- /ko -->
+<!--/ko-->
+
+
+<!-- ko with: getChild('todos-graphic') -->
+    <!-- ko template: getTemplate() --><!-- /ko -->
+<!--/ko-->
+
+<!-- ko if: readyList.length || todoList.length -->
+    <button class="action ready" data-bind="click: clearTodoLists">Clear Todo List</button>
+<!-- /ko -->
+
+<div class="field">
+    <label for="terms-second">Change terms value from another component (Used LINKS functionality)
+        <input type="checkbox" data-bind="checked: changeTerms" id="terms-second"/>
+    </label>
+</div>

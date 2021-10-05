@@ -1,0 +1,38 @@
+<?php
+/** @var \Overdose\Employee\ViewModel\Employee $viewModel  */
+/** @var \Overdose\Employee\Block\Employee $block */
+
+$viewModel = $block->getViewModel();
+?>
+<div>
+    <?= $viewModel->getText(); ?>
+</div>
+<h2>
+    <?php
+        echo $block->getFullName('Roman', 'Popovskiy');
+    ?>
+</h2>
+
+<?php
+$viewModel->addNewItem();
+?>
+
+<table style="border: 1px solid;">
+    <caption><?= __('Employees List') ?></caption>
+    <thead>
+    <tr>
+        <th><?= __('ID') ?></th>
+        <th><?= __('Name') ?></th>
+        <th><?= __('Age') ?></th>
+        <th><?= __('Notes') ?></th>
+    </tr>
+    </thead>
+    <?php foreach ($viewModel->getAllEmployees() as $employee): ?>
+    <tr>
+        <td><?= $employee->getData('id')?></td>
+        <td><?= $employee->getData('name')?></td>
+        <td><?= $employee->getData('age')?></td>
+        <td><?= $employee->getData('notes')?></td>
+    </tr>
+    <?php endforeach;?>
+</table>

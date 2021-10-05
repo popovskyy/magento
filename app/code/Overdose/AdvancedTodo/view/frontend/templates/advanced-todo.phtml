@@ -1,0 +1,19 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+
+<div data-bind="scope: 'advanced-todo'" class="advanced-todo">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<div data-bind="scope: 'ui-form'" class="advanced-todo">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>
+        }
+    }
+</script>

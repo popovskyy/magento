@@ -1,0 +1,49 @@
+<input type="text" data-bind="textInput: input" placeholder="Enter new todo item">
+
+<button data-bind="click: addTodo">Add ToDO</button>
+
+<!-- ko if: todoList.length -->
+    <div class="todo-list">
+        <H2>TODO-LIST</H2>
+        <input type="text"
+               data-bind="event: {keyup: findTodo}, textInput: searchInput"
+               placeholder="Find Todo">
+
+        <!-- ko if: resultArray.length -->
+            <h5>Search ....</h5>
+            <ul data-bind="foreach: resultArray">
+                <li data-bind="text: title">
+                </li>
+            </ul>
+        <!-- /ko -->
+
+        <!-- ko ifnot: resultArray.length -->
+        <ul data-bind="foreach: todoList">
+            <li data-bind="text: title">
+            </li>
+            <button class="action ready" data-bind="click: $parent.addToReady.bind($parent)">Ready</button>
+        </ul>
+        <!-- /ko -->
+    </div>
+<!-- /ko -->
+
+<!-- ko if: readyList.length -->
+    <div class="ready-list">
+        <H2>READY-LIST</H2>
+        <ul data-bind="foreach: readyList">
+            <li data-bind="text: title">
+            </li>
+        </ul>
+    </div>
+<!-- /ko -->
+
+<!-- ko if: readyList.length || todoList.length -->
+    <button class="action ready" data-bind="click: clearTodoLists">Clear Todo List</button>
+<!-- /ko -->
+
+
+<div class="field">
+    <label for="terms-third">Change terms value from another component (Used LINKS functionality)
+        <input type="checkbox" data-bind="checked: changeTerms" id="terms-third"/>
+    </label>
+</div>

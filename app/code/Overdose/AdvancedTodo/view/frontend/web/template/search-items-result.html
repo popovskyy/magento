@@ -1,0 +1,9 @@
+<!-- ko if: searchResultArray.length -->
+    <div  data-bind="visible: searchInputState">
+        <h5>Searching ....</h5>
+        <ul data-bind="foreach: searchResultArray">
+            <li data-bind="text: todo">
+            </li>
+        </ul>
+    </div>
+<!-- /ko -->

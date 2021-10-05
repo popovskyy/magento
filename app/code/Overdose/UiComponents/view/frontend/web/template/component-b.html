@@ -1,0 +1,34 @@
+<!-- ko if: title.length -->
+    <h1 data-bind="text: importedValue"></h1>
+<!-- /ko -->
+
+
+<h1 data-bind="text: secondTitle"></h1>
+<button data-bind="click: changeValue">Change value</button>
+
+<h2>Form elements</h2>
+
+<label for="show-diagram">Show Diagram and imported Ready List</label>
+<input type="checkbox"
+       class="checkbox"
+       id="show-diagram"
+       name="show-diagram"
+       data-bind="checked: checkboxValue" />
+
+<div style="width: 200px; height: 200px; background: green; border-radius: 50%" data-bind="visible: checkboxValue"></div>
+
+
+<!-- ko if: readyList.length -->
+    <div class="ready-list" data-bind="visible: checkboxValue">
+        <H2>READY-LIST Imported from component-A</H2>
+        <ul data-bind="foreach: readyList">
+            <li data-bind="text: title">
+            </li>
+        </ul>
+    </div>
+<!-- /ko -->
+
+<select data-bind="
+        options: availableCountries,
+        selectedOptions: chosenCountries,
+        value: selectValue"></select>

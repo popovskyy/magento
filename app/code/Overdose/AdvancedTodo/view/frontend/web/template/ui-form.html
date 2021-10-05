@@ -1,0 +1,15 @@
+<form class="form" data-bind="event: {submit: login }">
+    <div class="field required">
+        <label for="customer-name-ui">Customer Name</label>
+        <div class="control">
+            <input type="text" name="customer-name-ui" id="customer-name-ui" data-validate="{required:true}">
+        </div>
+    </div>
+    <div class="field">
+        <label for="customer-email-ui">Customer Email</label>
+        <div class="control">
+            <input type="email" name="customer-email-ui" id="customer-email-ui" data-validate="{required:true, 'validate-email':true}" data-bind="event: {keyup: validateField }">
+        </div>
+    </div>
+    <button type="submit">Send</button>
+</form>
