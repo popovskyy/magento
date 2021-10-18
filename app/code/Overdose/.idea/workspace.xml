@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="06f2e8cb-d0de-40e9-926a-92e5263f2551" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AjaxWishlist/CustomerData/Wishlist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AjaxWishlist/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AjaxWishlist/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AjaxWishlist/view/frontend/web/js/add-to-wishlist-mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AjaxWishlist/view/frontend/web/js/dataPostAjax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AjaxWishlist/view/frontend/web/js/wishlist-widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/Plugin/Controller/Index/Plugin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/etc/frontend/di.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AjaxWishlist/etc/frontend/di.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/etc/frontend/routes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/etc/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AjaxWishlist/etc/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/AjaxWishlist/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/view/frontend/layout/default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/view/frontend/requirejs-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/AjaxWishlist/view/frontend/requirejs-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/view/frontend/templates/ajaxwishlist.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/view/frontend/web/css/source/_module.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/view/frontend/web/js/ajaxwishlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjaxWishlist/view/frontend/web/js/wishlist.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/AjaxWishlist/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1z7uHijsqGM97l6t7Iro9t59dvT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06f2e8cb-d0de-40e9-926a-92e5263f2551" name="Changes" comment="" />
+      <created>1633511364882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633511364882</updated>
+      <workItem from="1633511366279" duration="1793000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

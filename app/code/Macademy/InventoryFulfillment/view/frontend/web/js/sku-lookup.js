@@ -21,6 +21,7 @@ define([
         initialize() {
             this._super();
         },
+
         handleSubmit() {
             $('body').trigger('processStart');
             this.messageResponse = '';

@@ -1,27 +1,23 @@
 define([
     'uiComponent',
-], function (Component) {
+    'ko'
+], function (Component, ko) {
     'use strict';
+
+    const boxConfiguration = () => {
+        return {
+            length: '',
+            width: '',
+            height: '',
+            weight: '',
+            unitsPerBox: '',
+            numberOfBoxes: ''
+        }
+    }
 
     return Component.extend({
         defaults: {
-            boxConfigurations: [
-                {
-                    length: 342,
-                    width: 34,
-                    height: 12
-                },
-                {
-                    length: 4,
-                    width: 345,
-                    height: 53
-                },
-                {
-                    length: 34,
-                    width: 32,
-                    height: 13
-                }
-            ],
+            boxConfigurations: [boxConfiguration()],
             tracks: {
                 boxConfigurations: true
             }
@@ -29,6 +25,18 @@ define([
 
         initialize() {
             this._super();
+        },
+
+        handleAdd() {
+            this.boxConfigurations.push(boxConfiguration());
+        },
+
+        handleDelete(index) {
+            this.boxConfigurations.splice(index(), 1);
+        },
+
+        handleSubmit() {
+            console.log('submit')
         }
     });
 });
